@@ -41,11 +41,14 @@ export default function Navbar() {
 
     </div>
         {/* web menu nav */}  
-        <nav className="bg-nav-domo">
-          <Link to="/" className="color-nav-font-domo">Home</Link>
-          <Link to="/menu" className="color-nav-font-domo">Menu</Link>
-          <Link to="/order" className="color-nav-font-domo">Order</Link>
-          <Link to="/about" className="color-nav-font-domo">About</Link>
+        <nav className="bg-nav-domo p-6 font-domo-head text-center" >
+          <Link to="/" className="text-white p-6">Home</Link>
+          <Link to="/menu" className="text-white p-6">Menu</Link>
+          <Link to="/order" className="text-white p-6">Order Online</Link>
+          <Link to="/reserve" className="text-white p-6 ">Reservation</Link>
+          <Link to="/cater" className="text-white p-6 ">Catering</Link>
+          <Link to="/about" className="text-white p-6 ">About</Link>
+          <Link to="/contact" className="text-white p-6 ">Contact Us</Link>
         </nav>
 </div> 
     );

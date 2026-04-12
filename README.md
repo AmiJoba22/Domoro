@@ -4,6 +4,12 @@
 
 This is a mock restaurant site based in NYC showcasing Gambian foods and culture.
 
+## Current Website Version (2024)
+
+[View Site Here](https://domoro.netlify.app/)
+
+Tech Stack - HTML, CSS, JavaScript, BootStrap
+
 ## 2026 Rebuild
 
 - Currently in Progress
@@ -22,14 +28,3 @@ This is a mock restaurant site based in NYC showcasing Gambian foods and culture
 - Node.js
 - Express (API)
 - PostgreSQL
-
-## Current Website Version (2024)
-
-[View Site Here](https://domoro.netlify.app/)
-
-### Tech Stack
-
-- HTML
-- CSS
-- Javascript
-- Bootstrap

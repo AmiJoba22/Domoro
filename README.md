@@ -6,7 +6,7 @@ NYC's Gambian Restaurant
   
 This is a mock restaurant site based in NYC showcasing Gambian foods and culture. 
 
-## 2026 Redesign 
+## 2026 Rebuild 
 - Currently in Progress
 
 ### Incoming Tech Stack 

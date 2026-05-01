@@ -11,7 +11,7 @@ export default function Footer() {
         <p className= 'text-white font-domo-head'> Get a taste of The Gambia right here in NYC.<br></br> We keep the culture alive.<br></br> Order some tatsy foods today!</p>
       </div>
 
-      <div className='bg-domo-bg text-white'>  
+      <div className='bg-domo-bg text-white font-domo-head'>  
         <p> Copyright © 2024 Domoro™</p>
         <p>Email:Domoro@restaurants.org</p>
       </div>

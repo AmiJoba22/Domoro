@@ -10,6 +10,7 @@ import Order from './pages/Order';
 import Reserve from './pages/Reserve';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Footer from './components/footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,9 +29,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      {/* Footer is OUTSIDE Routes so it stays at the bottom of every page */}
+      
     
       </div>
+      <Footer/>
       </Router>
 
   );

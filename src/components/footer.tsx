@@ -11,10 +11,13 @@ export default function Footer() {
         <p className= 'text-white font-domo-head flex items-center justify-between ml-20'> Get a taste of The Gambia right here in NYC.<br></br> We keep the culture alive.<br></br> Order some tatsy foods today!</p>
         <br>
         </br>
-        <button className='text-white font-domo-head ml-20'> BACK TO TOP </button>
-
+        <a href="Home.tsx">
+        <button className='text-white font-domo-head ml-20 bg-domo-bg scroll-smooth rounded-xl p-2 cursor-pointer'> BACK TO TOP </button>
+        </a>
+        
         <div className='bg-nav-domo text-center text-white font-domo-head'>  
-        <p> Copyright © 2024 Domoro™</p>
+        <br></br>    
+        <p> Copyright © 2024 Domoro™</p> 
       </div>
       </div>
       

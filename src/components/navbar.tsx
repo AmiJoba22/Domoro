@@ -1,55 +1,68 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+
 export default function Navbar() {
-    return (
-    /* Main div */
-<div className='main-logo bg-domo-bg'>
+  return (
+    /* Main Layout Wrapper Component */
+    <div className="w-full bg-domo-bg select-none">
 
-    {/* header div for logos and icons */}
-    <div className='flex items-center justify-between p-4'>
-        {/* div for logos */}
-        <div className='bg-domo-bg w-[100px] h-[100px] ml-8'>
-            <a href="Home.tsx">
-            <img src='/assets/domoro.imgs/Dom_final_logo.png' alt="domoro logo">
-               </img>
-             </a>  
+      {/* Top Header Layer: Logos, Brand Assets, and Account Actions */}
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between p-4 gap-6 md:gap-4">
+        
+        {/* Main Brand Logo Container */}
+        <div className="w-[100px] h-[100px] flex-shrink-0 transition-transform active:scale-95 duration-200">
+          <Link to="/">
+            <img 
+              src="/assets/domoro.imgs/Dom_final_logo.png" 
+              alt="Domoro logo" 
+              className="w-full h-full object-contain"
+            />
+          </Link> 
         </div> 
-        <div className='tagline bg-domo-bg flex items-center justify-between p-4 ml-30'>
-             <a href="Home.tsx">
-            <img src='/assets/domoro.imgs/Domoro2.png' alt="domoro tag logo">
-               </img>
-            </a>
-       </div>
 
+        {/* Center Tagline Banner Artwork */}
+        <div className="max-w-[280px] sm:max-w-[340px] md:max-w-[400px] h-auto flex items-center justify-center">
+          <Link to="/" className="w-full h-full block">
+            <img 
+              src="/assets/domoro.imgs/Domoro2.png" 
+              alt="Domoro tagline logo" 
+              className="w-full h-auto object-contain mx-auto"
+            />
+          </Link>
+        </div>
 
-        {/* div for icons */}
-    <div className='flex items-center justify-between mr-8 icons bg-domo-bg'>
-         <a className='w-[90px] h-[90px]' href="Order.tsx">
-        <img src='/assets/domoro.imgs/cart.png' alt='add to cart'  >
-           </img>
-        </a>
+        {/* Utility Actions & Status Icons Block */}
+        <div className="flex items-center gap-6 md:gap-4 flex-shrink-0">
+          
+          <Link to="/order" className="w-14 h-14 sm:w-16 sm:h-16 block hover:opacity-85 transition active:scale-95 duration-200" title="View Cart">
+            <img src="/assets/domoro.imgs/cart.png" alt="Add to cart" className="w-full h-full object-contain" />
+          </Link>
 
-         <a className='w-[90px] h-[90px]' href="Home.tsx">
-        <img src='/assets/domoro.imgs/call.png' alt='call us'  >
-           </img>
-        </a>
+          <Link to="/contact" className="w-14 h-14 sm:w-16 sm:h-16 block hover:opacity-85 transition active:scale-95 duration-200" title="Call Us">
+            <img src="/assets/domoro.imgs/call.png" alt="Call us" className="w-full h-full object-contain" />
+          </Link>
 
-         <a className='w-[90px] h-[90px]' href="Home.tsx">
-        <img src='/assets/domoro.imgs/login.png' alt='login to account'  >
-           </img>
-        </a>
+          <Link to="/login" className="w-14 h-14 sm:w-16 sm:h-16 block hover:opacity-85 transition active:scale-95 duration-200" title="Login to account">
+            <img src="/assets/domoro.imgs/login.png" alt="Login to account" className="w-full h-full object-contain" />
+          </Link>
+          
+        </div> 
+
+      </div>
+
+      {/* Main Website Navigation Menu Bar Row */}  
+      <nav className="bg-nav-domo py-4 sm:py-5 px-4 font-domo-head text-center border-t border-b border-white/5 shadow-inner">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-3 sm:gap-x-6 md:gap-x-8 text-sm sm:text-base font-semibold tracking-wide">
+          <Link to="/" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Home</Link>
+          <Link to="/menu" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Menu</Link>
+          <Link to="/order" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Order Online</Link>
+          <Link to="/reserve" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Reservation</Link>
+          <Link to="/cater" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Catering</Link>
+          <Link to="/about" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">About</Link>
+          <Link to="/contact" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Contact Us</Link>
+        </div>
+      </nav>
+
     </div> 
-
-    </div>
-        {/* web menu nav */}  
-        <nav className="bg-nav-domo p-6 font-domo-head text-center" >
-          <Link to="/" className="text-white p-6">Home</Link>
-          <Link to="/menu" className="text-white p-6">Menu</Link>
-          <Link to="/order" className="text-white p-6">Order Online</Link>
-          <Link to="/reserve" className="text-white p-6 ">Reservation</Link>
-          <Link to="/cater" className="text-white p-6 ">Catering</Link>
-          <Link to="/about" className="text-white p-6 ">About</Link>
-          <Link to="/contact" className="text-white p-6 ">Contact Us</Link>
-        </nav>
-</div> 
-    );
+  );
 }

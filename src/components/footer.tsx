@@ -1,29 +1,78 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-export default function Footer() {
-    return (
 
-<div>
-      <div className='bg-nav-domo'>
-        <a href="Home.tsx">
-            <img className= 'w-[100px] h-[100px] flex items-center justify-between ml-20' src='/assets/domoro.imgs/Dom_final_logo.png' alt="domoro logo">
-               </img>
-             </a> 
-        <p className= 'text-white font-domo-head flex items-center justify-between ml-20'> Get a taste of The Gambia right here in NYC.<br></br> We keep the culture alive.<br></br> Order some tatsy foods today!</p>
-        <br>
-        </br>
-        <a href="Home.tsx">
-        <button className='text-white font-domo-head ml-20 bg-domo-bg scroll-smooth rounded-xl p-2 cursor-pointer'> BACK TO TOP </button>
-        </a>
+export default function Footer() {
+  return (
+    <footer className="bg-nav-domo w-full py-10 select-none">
+      
+      {/* Main Content Container - Expanded to Max Width */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start justify-between gap-12 mb-10">
         
-        <div className='bg-nav-domo text-center text-white font-domo-head'>  
-        <br></br>    
-        <p> Copyright © 2024 Domoro™</p> 
+        {/* Left Section: Logo & Cultural Tagline */}
+        <div className="max-w-md flex-shrink-0">
+          {/* Brand Logo */}
+          <Link to="/" className="inline-block mb-4 transition-transform active:scale-95 duration-200">
+            <img 
+              className="w-[100px] h-[100px] object-contain" 
+              src="/assets/domoro.imgs/Dom_final_logo.png" 
+              alt="domoro logo" 
+            />
+          </Link> 
+
+          {/* Cultural Tagline */}
+          <p className="text-white font-domo-head text-base leading-relaxed"> 
+            Get a taste of The Gambia right here in NYC.<br /> 
+            We keep the culture alive.<br /> 
+            Order some tasty foods today!
+          </p>
+        </div>
+
+        {/* Right Section: Expanded Navigation Layout Link System */}
+        <div className="w-full flex-1 flex flex-col sm:flex-row sm:justify-around gap-8 font-domo-head pt-4">
+          
+          {/* Link Group 1 */}
+          <div className="flex flex-col space-y-3">
+            <h3 className="text-orange-400 font-bold tracking-wider text-sm uppercase">Explore</h3>
+            <Link to="/" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">Home</Link>
+            <Link to="/menu" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">Our Menu</Link>
+            <Link to="/about" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">About Us</Link>
+          </div>
+
+          {/* Link Group 2 */}
+          <div className="flex flex-col space-y-3">
+            <h3 className="text-orange-400 font-bold tracking-wider text-sm uppercase">Services</h3>
+            <Link to="/order" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">Order Online</Link>
+            <Link to="/reserve" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">Reservations</Link>
+            <Link to="/cater" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">Catering</Link>
+          </div>
+
+          {/* Link Group 3 */}
+          <div className="flex flex-col space-y-3">
+            <h3 className="text-orange-400 font-bold tracking-wider text-sm uppercase">Help</h3>
+            <Link to="/contact" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">Contact Us</Link>
+            <Link to="/privacy" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">Privacy Policy</Link>
+            <Link to="/terms" className="text-white/80 hover:text-orange-400 transition duration-150 text-sm">Terms of Service</Link>
+          </div>
+
+        </div>
+
       </div>
+
+      {/* Back to Top Button Row */}
+      <div className="mb-8 px-6 md:px-12">
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="text-white font-domo-head bg-domo-bg rounded-xl p-2 px-5 cursor-pointer font-semibold shadow-md transition hover:opacity-90 active:scale-95"
+        > 
+          BACK TO TOP 
+        </button>
       </div>
       
-   
-</div>
+      {/* Bottom Copyright Row with hardcoded 2024 launch year */}
+      <div className="text-center text-white/60 font-domo-head text-sm pt-6 border-t border-white/5">      
+        <p>Copyright © 2024 Domoro™</p> 
+      </div>
 
-
-    );
+    </footer>
+  );
 }

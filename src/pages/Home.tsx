@@ -15,13 +15,13 @@ export default function Home() {
       <div className="relative z-10 max-w-2xl text-center flex flex-col items-center justify-center text-white">
         
     
-        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6 max-w-xl leading-tight">
-          Delicious Local Flavors
+        <h1 className="text-4xl font-domo-head font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6 max-w-xl leading-tight">
+          Don't Wait, Order Now
         </h1>
 
         
-        <p className="text-base sm:text-lg text-gray-200 mb-8 max-w-md leading-relaxed font-medium">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
+        <p className="text-base font-domo-body sm:text-xl text-gray-200 mb-8 max-w-md leading-relaxed font-medium">
+          Order some traditional dishes from The Gambia. You'll be getting a taste of the smiling coast.
         </p>
 
         

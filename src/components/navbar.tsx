@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    /* Main Layout Wrapper Component */
+
     <div className="w-full bg-domo-bg select-none">
 
-      {/* Top Header Layer: Logos, Brand Assets, and Account Actions */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between p-4 gap-6 md:gap-4">
         
-        {/* Main Brand Logo Container */}
+       
         <div className="w-[100px] h-[100px] flex-shrink-0 transition-transform active:scale-95 duration-200">
           <Link to="/">
             <img 
@@ -20,7 +19,7 @@ export default function Navbar() {
           </Link> 
         </div> 
 
-        {/* Center Tagline Banner Artwork */}
+        
         <div className="max-w-[280px] sm:max-w-[340px] md:max-w-[400px] h-auto flex items-center justify-center">
           <Link to="/" className="w-full h-full block">
             <img 
@@ -31,7 +30,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Utility Actions & Status Icons Block */}
+       
         <div className="flex items-center gap-6 md:gap-4 flex-shrink-0">
           
           <Link to="/order" className="w-14 h-14 sm:w-16 sm:h-16 block hover:opacity-85 transition active:scale-95 duration-200" title="View Cart">
@@ -50,9 +49,9 @@ export default function Navbar() {
 
       </div>
 
-      {/* Main Website Navigation Menu Bar Row */}  
+      
       <nav className="bg-nav-domo py-4 sm:py-5 px-4 font-domo-head text-center border-t border-b border-white/5 shadow-inner">
-        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-3 sm:gap-x-6 md:gap-x-8 text-sm sm:text-base font-semibold tracking-wide">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-3 sm:gap-x-6 md:gap-x-8 text-sm sm:text-base tracking-wide">
           <Link to="/" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Home</Link>
           <Link to="/menu" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Menu</Link>
           <Link to="/order" className="text-white hover:text-orange-400 px-3 py-1 rounded transition duration-200">Order Online</Link>

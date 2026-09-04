@@ -4,15 +4,19 @@
 
 This is a mock restaurant site based in NYC showcasing Gambian foods and culture.
 
-## Current Website Version (2024)
+## Design: Wireframing & Prototyping
 
-[View Site Here](https://domoro.netlify.app/)
+### Logo:
 
-Tech Stack - HTML, CSS, JavaScript, BootStrap
+### Icons:
+
+### Branding Colors:
+
+### Figma Prototype:
 
 ## 2026 Rebuild
 
-- Currently in Progress
+- Ongoing
 
 ### Incoming Tech Stack
 
@@ -21,10 +25,18 @@ Tech Stack - HTML, CSS, JavaScript, BootStrap
 - React
 - Vite
 - Typescript
-- Tailwing CSS
+- Tailwind CSS
 
 #### Backend
 
 - Node.js
 - Express (API)
 - PostgreSQL
+
+---
+
+## Current Website Version (2024)
+
+[View Site Here](https://domoro.netlify.app/)
+
+Tech Stack - HTML, CSS, JavaScript, BootStrap
